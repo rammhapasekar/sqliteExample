@@ -12,6 +12,20 @@
 		3FA2857A1E74473500FBD762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA285781E74473500FBD762 /* Main.storyboard */; };
 		3FA2857C1E74473500FBD762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2857B1E74473500FBD762 /* Assets.xcassets */; };
 		3FA2857F1E74473500FBD762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2857D1E74473500FBD762 /* LaunchScreen.storyboard */; };
+		3FA285881E745F6400FBD762 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA285871E745F6400FBD762 /* DesignableButton.swift */; };
+		3FA2858A1E74710000FBD762 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA285891E74710000FBD762 /* DesignableView.swift */; };
+		3FA2858D1E7473F200FBD762 /* AddSuperheroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2858C1E7473F200FBD762 /* AddSuperheroVC.swift */; };
+		3FF029191E7525A2005A7472 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029101E7525A2005A7472 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3FF0291A1E7525A2005A7472 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029121E7525A2005A7472 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3FF0291B1E7525A2005A7472 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029141E7525A2005A7472 /* FMDatabaseQueue.m */; };
+		3FF0291C1E7525A2005A7472 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029161E7525A2005A7472 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3FF0291D1E7525A2005A7472 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029181E7525A2005A7472 /* FMDatabasePool.m */; };
+		3FF029201E752655005A7472 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0291F1E752655005A7472 /* libsqlite3.0.tbd */; };
+		3FF029231E752918005A7472 /* SuperheroTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029221E752918005A7472 /* SuperheroTableCell.swift */; };
+		3FF029261E753DEF005A7472 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029251E753DEF005A7472 /* Util.swift */; };
+		3FF029281E754086005A7472 /* SUPERHERO_INFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */; };
+		3FF0292A1E7541FE005A7472 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029291E7541FE005A7472 /* ModelManager.swift */; };
+		3FF029311E759814005A7472 /* BounceableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029301E759814005A7472 /* BounceableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +36,28 @@
 		3FA2857B1E74473500FBD762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA2857E1E74473500FBD762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA285801E74473500FBD762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA285871E745F6400FBD762 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		3FA285891E74710000FBD762 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		3FA2858C1E7473F200FBD762 /* AddSuperheroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSuperheroVC.swift; sourceTree = "<group>"; };
+		3FF0290D1E7525A1005A7472 /* SQLiteTutorial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLiteTutorial-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FF0290E1E7525A2005A7472 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		3FF0290F1E7525A2005A7472 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		3FF029101E7525A2005A7472 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		3FF029111E7525A2005A7472 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		3FF029121E7525A2005A7472 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		3FF029131E7525A2005A7472 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3FF029141E7525A2005A7472 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		3FF029151E7525A2005A7472 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		3FF029161E7525A2005A7472 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		3FF029171E7525A2005A7472 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		3FF029181E7525A2005A7472 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		3FF0291F1E752655005A7472 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3FF029221E752918005A7472 /* SuperheroTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperheroTableCell.swift; sourceTree = "<group>"; };
+		3FF029251E753DEF005A7472 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUPERHERO_INFO.swift; sourceTree = "<group>"; };
+		3FF029291E7541FE005A7472 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		3FF0292B1E755170005A7472 /* SuperheroDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperheroDB.sqlite; sourceTree = "<group>"; };
+		3FF029301E759814005A7472 /* BounceableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF029201E752655005A7472 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +77,7 @@
 			children = (
 				3FA285731E74473500FBD762 /* SQLiteTutorial */,
 				3FA285721E74473500FBD762 /* Products */,
+				3FF0291E1E752655005A7472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,91 @@
 		3FA285731E74473500FBD762 /* SQLiteTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3FF0292F1E7597DC005A7472 /* CustomControls */,
+				3FF029241E753C0C005A7472 /* Model */,
+				3FF029211E7528A3005A7472 /* TableViewCell */,
+				3FF0290C1E7524C0005A7472 /* FMDB */,
+				3FA2858B1E7473B200FBD762 /* Add Superhero */,
+				3FA285861E745F1A00FBD762 /* IBDesignables */,
 				3FA285741E74473500FBD762 /* AppDelegate.swift */,
 				3FA285761E74473500FBD762 /* ViewController.swift */,
 				3FA285781E74473500FBD762 /* Main.storyboard */,
 				3FA2857B1E74473500FBD762 /* Assets.xcassets */,
 				3FA2857D1E74473500FBD762 /* LaunchScreen.storyboard */,
 				3FA285801E74473500FBD762 /* Info.plist */,
+				3FF0292B1E755170005A7472 /* SuperheroDB.sqlite */,
 			);
 			path = SQLiteTutorial;
+			sourceTree = "<group>";
+		};
+		3FA285861E745F1A00FBD762 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				3FA285871E745F6400FBD762 /* DesignableButton.swift */,
+				3FA285891E74710000FBD762 /* DesignableView.swift */,
+			);
+			name = IBDesignables;
+			sourceTree = "<group>";
+		};
+		3FA2858B1E7473B200FBD762 /* Add Superhero */ = {
+			isa = PBXGroup;
+			children = (
+				3FA2858C1E7473F200FBD762 /* AddSuperheroVC.swift */,
+			);
+			name = "Add Superhero";
+			sourceTree = "<group>";
+		};
+		3FF0290C1E7524C0005A7472 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0290E1E7525A2005A7472 /* FMDB.h */,
+				3FF0290F1E7525A2005A7472 /* FMDatabase.h */,
+				3FF029101E7525A2005A7472 /* FMDatabase.m */,
+				3FF029111E7525A2005A7472 /* FMResultSet.h */,
+				3FF029121E7525A2005A7472 /* FMResultSet.m */,
+				3FF029131E7525A2005A7472 /* FMDatabaseQueue.h */,
+				3FF029141E7525A2005A7472 /* FMDatabaseQueue.m */,
+				3FF029151E7525A2005A7472 /* FMDatabaseAdditions.h */,
+				3FF029161E7525A2005A7472 /* FMDatabaseAdditions.m */,
+				3FF029171E7525A2005A7472 /* FMDatabasePool.h */,
+				3FF029181E7525A2005A7472 /* FMDatabasePool.m */,
+				3FF0290D1E7525A1005A7472 /* SQLiteTutorial-Bridging-Header.h */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		3FF0291E1E752655005A7472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0291F1E752655005A7472 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FF029211E7528A3005A7472 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3FF029221E752918005A7472 /* SuperheroTableCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		3FF029241E753C0C005A7472 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FF029251E753DEF005A7472 /* Util.swift */,
+				3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */,
+				3FF029291E7541FE005A7472 /* ModelManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3FF0292F1E7597DC005A7472 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				3FF029301E759814005A7472 /* BounceableButton.swift */,
+			);
+			name = CustomControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +212,7 @@
 					3FA285701E74473500FBD762 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TGFFLFRFNB;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +253,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA2858A1E74710000FBD762 /* DesignableView.swift in Sources */,
+				3FF029231E752918005A7472 /* SuperheroTableCell.swift in Sources */,
+				3FF0291B1E7525A2005A7472 /* FMDatabaseQueue.m in Sources */,
+				3FF029311E759814005A7472 /* BounceableButton.swift in Sources */,
+				3FF0292A1E7541FE005A7472 /* ModelManager.swift in Sources */,
 				3FA285771E74473500FBD762 /* ViewController.swift in Sources */,
+				3FF0291A1E7525A2005A7472 /* FMResultSet.m in Sources */,
+				3FA2858D1E7473F200FBD762 /* AddSuperheroVC.swift in Sources */,
+				3FF0291C1E7525A2005A7472 /* FMDatabaseAdditions.m in Sources */,
+				3FF029261E753DEF005A7472 /* Util.swift in Sources */,
+				3FF029191E7525A2005A7472 /* FMDatabase.m in Sources */,
+				3FF0291D1E7525A2005A7472 /* FMDatabasePool.m in Sources */,
+				3FF029281E754086005A7472 /* SUPERHERO_INFO.swift in Sources */,
 				3FA285751E74473500FBD762 /* AppDelegate.swift in Sources */,
+				3FA285881E745F6400FBD762 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +390,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TGFFLFRFNB;
 				INFOPLIST_FILE = SQLiteTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rammhapasekar.SQLiteTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteTutorial/SQLiteTutorial-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TGFFLFRFNB;
 				INFOPLIST_FILE = SQLiteTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rammhapasekar.SQLiteTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteTutorial/SQLiteTutorial-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +436,7 @@
 				3FA285851E74473500FBD762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

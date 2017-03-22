@@ -33,14 +33,14 @@
                                         <rect key="frame" x="0.0" y="28" width="394" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqQ-nv-rN3" id="Ms7-Fp-Hyg">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86k-So-pet">
                                                     <rect key="frame" x="8" y="7.9999999999999964" width="378" height="53.666666666666657"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HJ3-J3-cY0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="290" height="53.666666666666664"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HJ3-J3-cY0" userLabel="Details Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="53.666666666666664"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X7v-Wc-kec">
                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="27"/>
@@ -121,14 +121,13 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="760" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jyT-cY-tQQ">
-                                                            <rect key="frame" x="290" y="0.0" width="88" height="53.666666666666664"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="760" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jyT-cY-tQQ" userLabel="Buttons Stack View">
+                                                            <rect key="frame" x="300" y="0.0" width="78" height="53.666666666666664"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MP-JG-HQZ" customClass="DesignableButton" customModule="SQLiteTutorial" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="25"/>
                                                                     <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="88" id="LK8-WT-Ymr"/>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="PR1-RH-sZj"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
@@ -152,7 +151,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9l-ln-P75" customClass="DesignableButton" customModule="SQLiteTutorial" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="28.999999999999996" width="88" height="24.666666666666661"/>
+                                                                    <rect key="frame" x="0.0" y="28.999999999999996" width="78" height="24.666666666666661"/>
                                                                     <color key="backgroundColor" red="0.98039215690000003" green="0.0" blue="0.30980392159999998" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="F7V-TQ-u0g"/>
@@ -177,31 +176,20 @@
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
-                                                            <variation key="heightClass=compact" alignment="center"/>
-                                                            <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                                            <constraints>
+                                                                <constraint firstItem="7MP-JG-HQZ" firstAttribute="width" secondItem="Z9l-ln-P75" secondAttribute="width" id="Jpi-nh-IZV"/>
+                                                            </constraints>
+                                                            <variation key="heightClass=compact-widthClass=regular" alignment="center" axis="horizontal"/>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="HJ3-J3-cY0" firstAttribute="top" secondItem="86k-So-pet" secondAttribute="top" id="0yu-YV-5tl"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="leading" secondItem="HJ3-J3-cY0" secondAttribute="trailing" id="0zj-dY-lML"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="top" secondItem="86k-So-pet" secondAttribute="top" id="36N-i2-p61"/>
                                                         <constraint firstAttribute="bottom" secondItem="HJ3-J3-cY0" secondAttribute="bottom" id="GbU-cp-oTF"/>
-                                                        <constraint firstAttribute="bottom" secondItem="HJ3-J3-cY0" secondAttribute="bottom" id="JrX-ZF-9xF"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="top" secondItem="86k-So-pet" secondAttribute="top" id="Mnr-Jc-F6F"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="leading" secondItem="HJ3-J3-cY0" secondAttribute="trailing" id="QYD-ic-Bl1"/>
                                                         <constraint firstAttribute="trailing" secondItem="jyT-cY-tQQ" secondAttribute="trailing" id="Qgl-bj-Tki"/>
                                                         <constraint firstAttribute="bottom" secondItem="jyT-cY-tQQ" secondAttribute="bottom" id="Uep-SI-tIg"/>
                                                         <constraint firstItem="jyT-cY-tQQ" firstAttribute="leading" secondItem="HJ3-J3-cY0" secondAttribute="trailing" id="aoI-ik-7yj"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="leading" secondItem="HJ3-J3-cY0" secondAttribute="trailing" id="bTx-ko-los"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="leading" secondItem="HJ3-J3-cY0" secondAttribute="trailing" id="eJy-ce-Kk4"/>
                                                         <constraint firstItem="HJ3-J3-cY0" firstAttribute="leading" secondItem="86k-So-pet" secondAttribute="leading" id="gFC-dE-y0R"/>
-                                                        <constraint firstItem="HJ3-J3-cY0" firstAttribute="top" secondItem="86k-So-pet" secondAttribute="top" id="gll-pT-Ckg"/>
-                                                        <constraint firstAttribute="bottom" secondItem="jyT-cY-tQQ" secondAttribute="bottom" id="hJ1-ea-ODt"/>
-                                                        <constraint firstItem="HJ3-J3-cY0" firstAttribute="leading" secondItem="86k-So-pet" secondAttribute="leading" id="kIm-NT-eUC"/>
-                                                        <constraint firstAttribute="bottom" secondItem="jyT-cY-tQQ" secondAttribute="bottom" id="mgh-ZQ-rjh"/>
                                                         <constraint firstAttribute="trailing" secondItem="jyT-cY-tQQ" secondAttribute="trailing" id="tbf-eW-6oN"/>
-                                                        <constraint firstAttribute="trailing" secondItem="jyT-cY-tQQ" secondAttribute="trailing" id="vdJ-Xn-9VJ"/>
-                                                        <constraint firstItem="jyT-cY-tQQ" firstAttribute="top" secondItem="86k-So-pet" secondAttribute="top" id="zHA-xk-tEk"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>

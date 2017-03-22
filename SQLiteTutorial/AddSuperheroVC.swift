@@ -22,6 +22,8 @@ class AddSuperheroVC: UIViewController {
     
     static var superheroData : SUPERHERO_INFO!
     
+    var originalCenter: CGPoint!
+    
     //MARK: 
     //MARK: ViewController Methods
     
@@ -36,9 +38,33 @@ class AddSuperheroVC: UIViewController {
             lblHeader.text = "UPDATE SUPERHERO"
             
             btnInsert.setTitle("UPDATE", for: UIControlState.normal)
+            
+            originalCenter = self.view.center
+            
+            viewWillAppear(true)
         }
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+//    self.view.transform = CGAffineTransform(scaleX: 0.3, y: 2)
+        
+        self.view.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
+        self.view.center.y = self.view.center.y - (self.view.frame.height / 2)
+        self.view.transform = CGAffineTransform(rotationAngle: 1.8)
+
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [.allowUserInteraction,.curveEaseOut], animations: {
+            self.view.transform = .identity
+            
+        }) { (success) in
+            
+            self.view.center = self.originalCenter
+            self.view.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        }
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         AddSuperheroVC.isEdit = false
     }

@@ -96,6 +96,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //        self.performSegue(withIdentifier: "editSegue", sender: sender)
         
         self.prepareForSegue(segue: UIStoryboardSegue.init(identifier: "editSegue", source: self, destination: AddSuperheroVC()) , sender: sender as AnyObject?)
+
     }
     
     

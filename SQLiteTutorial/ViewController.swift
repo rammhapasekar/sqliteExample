@@ -70,8 +70,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let superhero: SUPERHERO_INFO = marrSuperherotData.object(at: indexPath.section) as! SUPERHERO_INFO
         
-        cell.lblName.text = superhero.NAME
-        cell.lblPower.text = superhero.POWER
+        cell.lblName.text = try! superhero.NAME.aesDecrypt(key: ApplicationConstants.KEY, iv: ApplicationConstants.IV)
+        cell.lblPower.text = try! superhero.POWER.aesDecrypt(key: ApplicationConstants.KEY, iv: ApplicationConstants.IV)
         cell.btnEdit.tag = indexPath.section
         cell.btnDelete.tag = indexPath.section
         
@@ -109,9 +109,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let superheroInfo: SUPERHERO_INFO = marrSuperherotData.object(at: selectedIndex) as! SUPERHERO_INFO
         let isDeleted = ModelManager.getInstance().deleteSuperheroData(superheroInfo: superheroInfo)
         if isDeleted {
-            self.invokeAlertMethod(title: "", message: "Record deleted successfully.")
+//            self.invokeAlertMethod(title: "", message: "Record deleted successfully.")
+            view.makeToast(message: "Record deleted successfully.", duration: 3.0 , position: .Bottom)
         } else {
             self.invokeAlertMethod(title: "", message: "Error in deleting record.")
+            view.makeToast(message: "Error in deleting record.", duration: 3.0 , position: .Bottom)
         }
         self.getSuperheroData()
     }

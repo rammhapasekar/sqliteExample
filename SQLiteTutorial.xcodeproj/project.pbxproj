@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0AAA7CC7A21B1B1CAEF75F /* Pods_SQLiteTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058C2739F88148EC412AC33 /* Pods_SQLiteTutorial.framework */; };
+		3F89078D1E857BE200162A9E /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F89078C1E857BE200162A9E /* ApplicationConstants.swift */; };
+		3F89078F1E85815E00162A9E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F89078E1E85815E00162A9E /* Toast.swift */; };
 		3FA285751E74473500FBD762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA285741E74473500FBD762 /* AppDelegate.swift */; };
 		3FA285771E74473500FBD762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA285761E74473500FBD762 /* ViewController.swift */; };
 		3FA2857A1E74473500FBD762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA285781E74473500FBD762 /* Main.storyboard */; };
@@ -26,9 +29,12 @@
 		3FF029281E754086005A7472 /* SUPERHERO_INFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */; };
 		3FF0292A1E7541FE005A7472 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029291E7541FE005A7472 /* ModelManager.swift */; };
 		3FF029311E759814005A7472 /* BounceableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF029301E759814005A7472 /* BounceableButton.swift */; };
+		3FF8B1A01E8435AA003CF5BF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF8B19F1E8435A9003CF5BF /* CryptoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F89078C1E857BE200162A9E /* ApplicationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
+		3F89078E1E85815E00162A9E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		3FA285711E74473500FBD762 /* SQLiteTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA285741E74473500FBD762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA285761E74473500FBD762 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,10 @@
 		3FF029291E7541FE005A7472 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		3FF0292B1E755170005A7472 /* SuperheroDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperheroDB.sqlite; sourceTree = "<group>"; };
 		3FF029301E759814005A7472 /* BounceableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceableButton.swift; sourceTree = "<group>"; };
+		3FF8B19F1E8435A9003CF5BF /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/SQLiteTutorial-bvdxbsqjymtbwfedtyhipsjxvxmr/Build/Products/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework"; sourceTree = "<group>"; };
+		557CCD948D8942A71BA5B00B /* Pods-SQLiteTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiteTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiteTutorial/Pods-SQLiteTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		AC66478EB2879F25EBC8FD4F /* Pods-SQLiteTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiteTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQLiteTutorial/Pods-SQLiteTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		B058C2739F88148EC412AC33 /* Pods_SQLiteTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQLiteTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,19 +75,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF8B1A01E8435AA003CF5BF /* CryptoSwift.framework in Frameworks */,
 				3FF029201E752655005A7472 /* libsqlite3.0.tbd in Frameworks */,
+				1A0AAA7CC7A21B1B1CAEF75F /* Pods_SQLiteTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F400F711E82EC1800AAC24F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F400F721E82EC3000AAC24F /* DisplaySuperhero */,
+				3FA2858B1E7473B200FBD762 /* Add Superhero */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F400F721E82EC3000AAC24F /* DisplaySuperhero */ = {
+			isa = PBXGroup;
+			children = (
+				3F400F741E82ECCD00AAC24F /* ViewController */,
+				3FF029211E7528A3005A7472 /* TableViewCell */,
+				3F400F751E82ECE100AAC24F /* POJO */,
+			);
+			name = DisplaySuperhero;
+			sourceTree = "<group>";
+		};
+		3F400F741E82ECCD00AAC24F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA285761E74473500FBD762 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3F400F751E82ECE100AAC24F /* POJO */ = {
+			isa = PBXGroup;
+			children = (
+				3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */,
+			);
+			name = POJO;
+			sourceTree = "<group>";
+		};
+		3F89078A1E857B9000162A9E /* ApplicationConstant */ = {
+			isa = PBXGroup;
+			children = (
+				3F89078C1E857BE200162A9E /* ApplicationConstants.swift */,
+			);
+			name = ApplicationConstant;
+			sourceTree = "<group>";
+		};
 		3FA285681E74473500FBD762 = {
 			isa = PBXGroup;
 			children = (
 				3FA285731E74473500FBD762 /* SQLiteTutorial */,
 				3FA285721E74473500FBD762 /* Products */,
 				3FF0291E1E752655005A7472 /* Frameworks */,
+				662D7AE4F41ABEC966562C68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,19 +148,19 @@
 		3FA285731E74473500FBD762 /* SQLiteTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3FF0292F1E7597DC005A7472 /* CustomControls */,
-				3FF029241E753C0C005A7472 /* Model */,
-				3FF029211E7528A3005A7472 /* TableViewCell */,
-				3FF0290C1E7524C0005A7472 /* FMDB */,
-				3FA2858B1E7473B200FBD762 /* Add Superhero */,
-				3FA285861E745F1A00FBD762 /* IBDesignables */,
-				3FA285741E74473500FBD762 /* AppDelegate.swift */,
-				3FA285761E74473500FBD762 /* ViewController.swift */,
-				3FA285781E74473500FBD762 /* Main.storyboard */,
-				3FA2857B1E74473500FBD762 /* Assets.xcassets */,
 				3FA2857D1E74473500FBD762 /* LaunchScreen.storyboard */,
+				3FA285781E74473500FBD762 /* Main.storyboard */,
 				3FA285801E74473500FBD762 /* Info.plist */,
 				3FF0292B1E755170005A7472 /* SuperheroDB.sqlite */,
+				3FA285741E74473500FBD762 /* AppDelegate.swift */,
+				3F89078E1E85815E00162A9E /* Toast.swift */,
+				3FA2857B1E74473500FBD762 /* Assets.xcassets */,
+				3F89078A1E857B9000162A9E /* ApplicationConstant */,
+				3FF0292F1E7597DC005A7472 /* CustomControls */,
+				3FF0290C1E7524C0005A7472 /* FMDB */,
+				3FA285861E745F1A00FBD762 /* IBDesignables */,
+				3FF029241E753C0C005A7472 /* Model */,
+				3F400F711E82EC1800AAC24F /* ViewControllers */,
 			);
 			path = SQLiteTutorial;
 			sourceTree = "<group>";
@@ -148,7 +204,9 @@
 		3FF0291E1E752655005A7472 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FF8B19F1E8435A9003CF5BF /* CryptoSwift.framework */,
 				3FF0291F1E752655005A7472 /* libsqlite3.0.tbd */,
+				B058C2739F88148EC412AC33 /* Pods_SQLiteTutorial.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				3FF029251E753DEF005A7472 /* Util.swift */,
-				3FF029271E754086005A7472 /* SUPERHERO_INFO.swift */,
 				3FF029291E7541FE005A7472 /* ModelManager.swift */,
 			);
 			name = Model;
@@ -179,6 +236,15 @@
 			name = CustomControls;
 			sourceTree = "<group>";
 		};
+		662D7AE4F41ABEC966562C68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				557CCD948D8942A71BA5B00B /* Pods-SQLiteTutorial.debug.xcconfig */,
+				AC66478EB2879F25EBC8FD4F /* Pods-SQLiteTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FA285831E74473500FBD762 /* Build configuration list for PBXNativeTarget "SQLiteTutorial" */;
 			buildPhases = (
+				FC4FB97EC16EFE4A01941195 /* [CP] Check Pods Manifest.lock */,
 				3FA2856D1E74473500FBD762 /* Sources */,
 				3FA2856E1E74473500FBD762 /* Frameworks */,
 				3FA2856F1E74473500FBD762 /* Resources */,
+				10C7CBB0FF0136730F49DA19 /* [CP] Embed Pods Frameworks */,
+				7080A8BDB93E6A375C8E3317 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +317,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10C7CBB0FF0136730F49DA19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQLiteTutorial/Pods-SQLiteTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7080A8BDB93E6A375C8E3317 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQLiteTutorial/Pods-SQLiteTutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4FB97EC16EFE4A01941195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FA2856D1E74473500FBD762 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,10 +372,12 @@
 			files = (
 				3FA2858A1E74710000FBD762 /* DesignableView.swift in Sources */,
 				3FF029231E752918005A7472 /* SuperheroTableCell.swift in Sources */,
+				3F89078F1E85815E00162A9E /* Toast.swift in Sources */,
 				3FF0291B1E7525A2005A7472 /* FMDatabaseQueue.m in Sources */,
 				3FF029311E759814005A7472 /* BounceableButton.swift in Sources */,
 				3FF0292A1E7541FE005A7472 /* ModelManager.swift in Sources */,
 				3FA285771E74473500FBD762 /* ViewController.swift in Sources */,
+				3F89078D1E857BE200162A9E /* ApplicationConstants.swift in Sources */,
 				3FF0291A1E7525A2005A7472 /* FMResultSet.m in Sources */,
 				3FA2858D1E7473F200FBD762 /* AddSuperheroVC.swift in Sources */,
 				3FF0291C1E7525A2005A7472 /* FMDatabaseAdditions.m in Sources */,
@@ -388,6 +507,7 @@
 		};
 		3FA285841E74473500FBD762 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557CCD948D8942A71BA5B00B /* Pods-SQLiteTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -404,6 +524,7 @@
 		};
 		3FA285851E74473500FBD762 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC66478EB2879F25EBC8FD4F /* Pods-SQLiteTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

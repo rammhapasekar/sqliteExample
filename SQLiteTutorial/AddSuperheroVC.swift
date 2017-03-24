@@ -24,22 +24,21 @@ class AddSuperheroVC: UIViewController {
     
     var originalCenter: CGPoint!
     
-    //MARK: 
+    //MARK:
     //MARK: ViewController Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if(AddSuperheroVC.isEdit)
         {
-            txtName.text = AddSuperheroVC.superheroData.NAME
-            txtPower.text = AddSuperheroVC.superheroData.POWER
+            
+            txtName.text = try! AddSuperheroVC.superheroData.NAME.aesDecrypt(key: ApplicationConstants.KEY, iv: ApplicationConstants.IV)
+            txtPower.text = try! AddSuperheroVC.superheroData.POWER.aesDecrypt(key: ApplicationConstants.KEY, iv: ApplicationConstants.IV)
             
             lblHeader.text = "UPDATE SUPERHERO"
             
             btnInsert.setTitle("UPDATE", for: UIControlState.normal)
-            
-            originalCenter = self.view.center
             
             viewWillAppear(true)
         }
@@ -47,6 +46,8 @@ class AddSuperheroVC: UIViewController {
 
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        originalCenter = self.view.center
         
 //    self.view.transform = CGAffineTransform(scaleX: 0.3, y: 2)
         
@@ -123,11 +124,11 @@ class AddSuperheroVC: UIViewController {
             
                 let superheroInfo: SUPERHERO_INFO = SUPERHERO_INFO()
                 superheroInfo.ID = AddSuperheroVC.superheroData.ID
-                superheroInfo.NAME = txtName.text!
-                superheroInfo.POWER = txtPower.text!
+                superheroInfo.NAME = try! txtName.text!.aesEncrypt(key: ApplicationConstants.KEY , iv: ApplicationConstants.IV)
+                superheroInfo.POWER = try! txtPower.text!.aesEncrypt(key: ApplicationConstants.KEY , iv: ApplicationConstants.IV)
                 let isUpdated = ModelManager.getInstance().updateSuperheroData(superheroInfo: superheroInfo)
                 if isUpdated {
-                    //                Util.invokeAlertMethod(strTitle: "", strBody: "Record updated successfully.", delegate: nil)
+//                    self.invokeAlertMethod(title: "", message: "Record updated successfully.")
                     dismiss(animated: true, completion: nil)
                 } else {
                     self.invokeAlertMethod(title: "", message: "Error in updating record.")
@@ -136,12 +137,11 @@ class AddSuperheroVC: UIViewController {
             else{
                 
                 let superheroInfo: SUPERHERO_INFO = SUPERHERO_INFO()
-                superheroInfo.NAME = txtName.text!
-                superheroInfo.POWER = txtPower.text!
+                superheroInfo.NAME = try! txtName.text!.aesEncrypt(key: ApplicationConstants.KEY , iv: ApplicationConstants.IV)
+                superheroInfo.POWER = try! txtPower.text!.aesEncrypt(key: ApplicationConstants.KEY , iv: ApplicationConstants.IV)
                 let isInserted = ModelManager.getInstance().addSuperheroData(superheroInfo: superheroInfo)
                 if isInserted {
-                    //            Util.invokeAlertMethod(strTitle: "", strBody: "Record Inserted successfully.", delegate: nil)
-                    
+//                     self.invokeAlertMethod(title: "", message: "Record Inserted successfully.")
                     dismiss(animated: true, completion: nil)
                 } else {
                     self.invokeAlertMethod(title: "", message: "Error in inserting record.")

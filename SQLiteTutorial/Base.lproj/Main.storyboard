@@ -13,7 +13,7 @@
         <!--SUPERHEROS-->
         <scene sceneID="rOg-jm-1tM">
             <objects>
-                <viewController id="ARy-8K-frN" customClass="ViewController" customModule="SQLiteTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="ARy-8K-frN" customClass="ViewController" customModule="SQLiteTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZb-fg-VKc"/>
                         <viewControllerLayoutGuide type="bottom" id="KCT-oB-LSZ"/>
@@ -424,10 +424,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KED-RI-lGQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7as-CL-bOd">
-                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -435,10 +435,10 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-Dl-aaO">
-                                    <rect key="frame" x="59.666666666666657" y="0.0" width="314.33333333333337" height="40"/>
+                                    <rect key="frame" x="60" y="0.0" width="314" height="40"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-Hd-Zbo">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="5Lp-DL-zWH"/>
                                             </constraints>
@@ -454,10 +454,10 @@
                             <rect key="frame" x="0.0" y="55" width="374" height="40"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y91-y4-FfK">
-                                    <rect key="frame" x="0.0" y="0.0" width="47.333333333333336" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bje-zz-9aW">
-                                            <rect key="frame" x="0.0" y="0.0" width="47.333333333333336" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -465,10 +465,10 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdZ-mb-1yd">
-                                    <rect key="frame" x="57.333333333333343" y="0.0" width="316.66666666666663" height="40"/>
+                                    <rect key="frame" x="58" y="0.0" width="316" height="40"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kl-bV-vj5">
-                                            <rect key="frame" x="0.0" y="0.0" width="316.66666666666669" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="pYJ-5w-AK6"/>
                                             </constraints>

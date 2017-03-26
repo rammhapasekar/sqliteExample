@@ -9,7 +9,7 @@
 import Foundation
 
 let sharedInstance = ModelManager()
-
+ 
 class ModelManager: NSObject {
     
     var database: FMDatabase? = nil

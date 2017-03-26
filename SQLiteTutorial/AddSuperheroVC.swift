@@ -1,10 +1,8 @@
-//
 //  AddSuperheroVC.swift
 //  SQLiteTutorial
 //
 //  Created by Ram Mhapasekar on 11/03/17.
 //  Copyright © 2017 Ram Mhapasekar. All rights reserved.
-//
 
 import UIKit
 

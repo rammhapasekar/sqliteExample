@@ -22,7 +22,6 @@ class AddSuperheroVC: UIViewController {
     
     var originalCenter: CGPoint!
     
-    //MARK:
     //MARK: ViewController Methods
     
     override func viewDidLoad() {
@@ -46,6 +45,29 @@ class AddSuperheroVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         originalCenter = self.view.center
+        
+//    self.view.transform = CGAffineTransform(scaleX: 0.3, y: 2)
+        
+        self.view.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
+        self.view.center.y = self.view.center.y - (self.view.frame.height / 2)
+        self.view.transform = CGAffineTransform(rotationAngle: 1.8)
+
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [.allowUserInteraction,.curveEaseOut], animations: {
+            self.view.transform = .identity
+            
+        }) { (success) in
+            
+            self.view.center = self.originalCenter
+            self.view.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        AddSuperheroVC.isEdit = false
+    }
+    
+        override func viewWillAppear(_ animated: Bool) {
         
 //    self.view.transform = CGAffineTransform(scaleX: 0.3, y: 2)
         
